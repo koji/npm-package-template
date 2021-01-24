@@ -12,7 +12,7 @@ jobs:
       - node/install-packages
       - run:
           name: Run tests
-          command: yarn test
+          command: npm test
 
 workflows:
   run-test:
