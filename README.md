@@ -1,4 +1,7 @@
 # npm-package-template
+This is a template for a npm package.  
+Current `src` has trim and isOdd/isEven functionality.  
+
 ## How to run locally
 
 ```zsh
