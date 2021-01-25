@@ -1,4 +1,5 @@
 # npm-package-template
+## How to run locally
 
 ```zsh
 $ yarn
