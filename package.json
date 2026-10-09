@@ -2,6 +2,11 @@
   "name": "hellotslib",
   "version": "0.0.1",
   "description": "npm package template",
+  "license": "MIT",
+  "author": "koji kanao",
+  "files": [
+    "dist"
+  ],
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
@@ -19,25 +24,24 @@
     },
     "./package.json": "./package.json"
   },
-  "files": [
-    "dist"
-  ],
-  "author": "koji kanao",
-  "license": "MIT",
-  "engines": {
-    "node": ">=22.12"
-  },
   "scripts": {
     "build": "tsdown",
     "test": "vitest run",
-    "lint": "eslint .",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "format": "oxfmt",
+    "format:check": "oxfmt --check",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "eslint": "10.12.0",
+    "oxfmt": "^0.72.0",
+    "oxlint": "^1.87.0",
     "tsdown": "0.23.0",
     "tslib": "2.8.1",
     "typescript": "7.0.2",
     "vitest": "5.0.3"
+  },
+  "engines": {
+    "node": ">=22.12"
   }
 }

@@ -21,5 +21,4 @@ describe('test trim', (): void => {
     const resp: string = trim('     testCase     ');
     expect(resp).toBe('testCase');
   });
-
 });
