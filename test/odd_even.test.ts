@@ -1,3 +1,4 @@
+import { describe, expect, test } from 'vitest';
 import odd_even from '../src/odd_even';
 
 describe('test odd_even', (): void => {

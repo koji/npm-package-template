@@ -1,3 +1,4 @@
+import { describe, expect, test } from 'vitest';
 import trim from '../src/trim';
 
 describe('test trim', (): void => {
