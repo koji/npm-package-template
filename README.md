@@ -9,7 +9,7 @@ Current `src` has trim and isOdd/isEven functionality.
 - tsdown (build, ESM + CJS + .d.ts)
 - Vitest (test)
 - oxlint + oxfmt
-- Node >= 22.12 (CI: `cimg/node:24.x`)
+- Node >= 22.12 (CI: Node 24 via GitHub Actions)
 
 ## How to run locally
 
@@ -35,7 +35,7 @@ $ npm run build
 $ npm test
 ```
 
-## Circle CI
+## CI
 
-image: `cimg/node:24.x`
-Circle CI is using `npm`, so `package-lock.json` is committed (no `yarn.lock`).
+GitHub Actions (`.github/workflows/ci.yml`) on Node 24.
+CI runs `npm ci` with `package-lock.json`, then lint, format check, typecheck, build, and test.
