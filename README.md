@@ -9,33 +9,33 @@ Current `src` has trim and isOdd/isEven functionality.
 - tsdown (build, ESM + CJS + .d.ts)
 - Vitest (test)
 - oxlint + oxfmt
-- Node >= 22.12 (CI: Node 24 via GitHub Actions)
+- Node >= 22.12 (CI: Bun via GitHub Actions)
 
 ## How to run locally
 
 ```zsh
-$ npm install
+$ bun install
 
 # lint
-$ npm run lint
+$ bun run lint
 
 # format (write)
-$ npm run format
+$ bun run format
 
 # format check
-$ npm run format:check
+$ bun run format:check
 
 # typecheck
-$ npm run typecheck
+$ bun run typecheck
 
 # build
-$ npm run build
+$ bun run build
 
 # test
-$ npm test
+$ bun run test
 ```
 
 ## CI
 
-GitHub Actions (`.github/workflows/ci.yml`) on Node 24.
-CI runs `npm ci` with `package-lock.json`, then lint, format check, typecheck, build, and test.
+GitHub Actions (`.github/workflows/ci.yml`) runs on Bun.
+CI runs `bun install` with `bun.lock`, then lint, format check, typecheck, build, and test.
