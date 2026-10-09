@@ -1,6 +1,6 @@
 # npm-package-template
 
-This is a template for a npm package.
+This is a template for an npm package.
 Current `src` has trim and isOdd/isEven functionality.
 
 ## Stack
