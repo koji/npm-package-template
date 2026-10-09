@@ -1,3 +1,4 @@
+import { describe, expect, test } from 'vitest';
 import trim from '../src/trim';
 
 describe('test trim', (): void => {
@@ -20,5 +21,4 @@ describe('test trim', (): void => {
     const resp: string = trim('     testCase     ');
     expect(resp).toBe('testCase');
   });
-
 });
