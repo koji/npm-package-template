@@ -9,7 +9,7 @@ Current `src` has trim and isOdd/isEven functionality.
 - tsdown (build, ESM + CJS + .d.ts)
 - Vitest (test)
 - oxlint + oxfmt
-- Node >= 22.12 (CI: Bun via GitHub Actions)
+- Node >= 24.17.0 (CI: Bun via GitHub Actions)
 
 ## How to run locally
 
